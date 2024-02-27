@@ -1,0 +1,25 @@
+.navbar-brand {
+    font-size: 1.8rem !important;
+    font-weight: 700 !important;
+    color: #121212 !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+    margin: 0 20px !important;
+    opacity: .6;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    flex-basis: auto !important;
+    margin: 0 0 0 20px !important;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #121212 !important;
+}
+.nav-link {
+    font-size: 1.1rem !important;
+    font-weight: 500 !important;
+    color: #212121 !important;
+}
