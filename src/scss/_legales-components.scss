@@ -1,0 +1,20 @@
+.section-legales{
+    width: 100%;
+    padding: 0 20px;
+    margin: 50px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .card-legales{
+        width: 550px;
+        .card-legales-text{
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 400;
+            color: #121212;
+            a{
+                text-decoration: none;
+                color:#3f9efd;;
+            }
+        }
+    }
+}

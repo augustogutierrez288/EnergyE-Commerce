@@ -1,21 +1,80 @@
 ---
+//pluggins
+import { Image } from 'astro:assets';
+//Component
 import Layout from '../layouts/Layout.astro';
+import HeaderPages from "../components/astro/HeaderPages.astro";
+//Media
+import atleta from "../assets/img/athlete-posing-in-action.webp";
+import polo from "../assets/img/polo-posing-in-action.webp";
 ---
 
-<Layout title="E-Commerce Energy - Encontra los mejores suplementos deportivos">
+<Layout title="Sobre Nosotros">
 	
-	<header class="container-fluid p-0 m-0 w-100">
-		<section class="row p-0 m-0 w-100">
-			<section class="col-12 p-0 m-0 w-100 header-about">
-				<h1>Sobre nosotros</h1>
-				<div class="custom-shape-divider-bottom-1708964408">
-					<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-						<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+	<HeaderPages title="Sobre Nosotros"/>
+
+	<main class="container-fluid">
+		<section class="row">
+
+			<article class="article-parrafo col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 col-xxl-2">
+				<div class="line"></div>
+				<p>Los limites existen en tú mente</p>
+			</article>
+
+			<article class="article-figure col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5">
+				<figure>
+					<Image src={polo} alt="polo posing in action"/>	
+				</figure>
+			</article>
+
+			<article class="article-mision col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5">
+				<h2>
+					Nuestra mision es brindarte los mejores suplementos del mercado
+				</h2>
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+					Voluptatibus iusto corporis quod alias perferendis facere 
+					quisquam exercitationem, maiores iure, earum voluptatem. 
+					Quis perspiciatis cum animi unde voluptatem aut ad sit
+				</p>
+			</article>
+
+			<article class="article-testamento col-12">
+				<figure class="image">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16">
+						<path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z"/>
+						<path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
 					</svg>
-				</div>
+				</figure>
+				<p class="text">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+					Voluptatibus iusto corporis quod alias perferendis facere 
+					quisquam exercitationem, maiores iure, earum voluptatem. 
+					Quis perspiciatis cum animi unde voluptatem aut ad sit.
+				</p>
+				<h5 class="autor">
+					-Augusto Gutierrez
+				</h5>
+			</article>
+
+			<section class="col-12 d-flex flex-row flex-wrap justify-content-center align-items-center w-100">
+				<article class="w-50 article-parrafo-two">
+					<h2>Ayudamos a desarrollar el cuerpo de miles de atletas</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+						Tempora odit possimus quis ipsum ad, ipsam accusantium 
+						facilis! Non minima explicabo laboriosam error. Officia 
+						quod laborum laboriosam voluptatum doloremque, ea possimus.
+					</p>
+				</article>
+				<article class="w-50 article-figure-two">
+					<figure>
+						<Image src={atleta} alt="athlete posing in action"/>
+					</figure>
+				</article>
 			</section>
 		</section>
-	</header>
-	
+
+	</main>
 	
 </Layout>

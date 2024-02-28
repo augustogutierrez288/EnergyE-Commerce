@@ -73,8 +73,6 @@
     }
 }
 
-
-
 .custom-shape-divider-top-1708812095 {
     position: absolute;
     top: 0;
@@ -83,15 +81,48 @@
     overflow: hidden;
     line-height: 0;
     padding: 0;
+    svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 150px;
+        .shape-fill {
+            fill: #f8f9fa;
+        }
+    }
 }
 
-.custom-shape-divider-top-1708812095 svg {
+.header-pages{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-}
-
-.custom-shape-divider-top-1708812095 .shape-fill {
-    fill: #f8f9fa;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    h1{
+        font-size: 4rem;
+        font-weight: 700;
+        color: #f8f9fa;
+        opacity: 1;
+    }
+    .custom-shape-divider-bottom-1708964408 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+        svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 155px;
+            .shape-fill {
+                fill: #f8f9fa;
+            }
+        }
+    }
 }
