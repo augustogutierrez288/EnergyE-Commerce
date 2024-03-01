@@ -1,0 +1,303 @@
+@media screen and (min-width: 576px) and (max-width: 767px) {
+   //Navbar Component
+   .burger{
+    width: 100vw;
+    height: 80px;
+    .burger-section{
+        position: relative;
+        background-color: map-get($colors , light );
+        backdrop-filter: blur(0);
+        z-index: 1;
+        .burger-logo{
+            font-size: 2.5rem;
+            margin-left: 10px;
+        }
+        .burger-article{
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 40px;
+            right: 0;
+            transition: .5s;
+            .burger--ul{
+                width: 100%;
+                height: 100%;
+                flex-direction: column;
+                align-items: flex-end;
+                gap: 20px;
+                list-style: none;
+                margin-right: 0;
+                padding: 0 20px 0 0;
+                background-color: map-get($colors , light );
+                gap: 20px;
+                .burger--li{
+                    .burger--link{
+                        text-decoration: none;
+                        text-align: right;
+                        font-size: 4rem;
+                        font-weight: 700;
+                        color: map-get($colors , celestial-pure );
+                        opacity: .6;
+                        transition: all .5s;
+                    }
+                }
+            }
+        }
+        .active-article{
+            display: flex !important;
+        }
+        .remove-article{
+            display: none !important;
+        }
+    }
+}
+.hamburger{
+    display: inline-block;
+    top: 30px;
+    .hamburger-box{
+        width: 60px;
+        height: calc(60px - 16px);
+    }
+}
+//Header Component
+.header-index{
+    height: auto;
+    .header-index-titles{
+        width: 100%;
+        height: 50%;
+        padding: 0 30px;
+        margin-top: 110px;
+        .title{
+            font-size: 7rem;
+            margin: 0 0 0 15px;
+        }
+        .subtitle{
+            top: 36%;
+            left: 50px;
+            font-size: 2.5rem;
+        }
+        .text {
+            font-size: 1.2rem;
+        }
+        .btn-call-to-action{
+            font-size: 1.2rem;
+        }
+    }
+    .header-index-image{
+        width: 100%;
+        height: 50%;
+        margin-top: 60px;
+        z-index: 0;
+        .image{
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+}
+//Brands Component
+.article-brands{
+    padding: 0 20%;
+    gap: 5px;
+    .logo-brands{
+        width: 80px;
+        height: 80px;
+        margin: 0;
+    }
+}
+//Info Component
+.section-info{
+    gap: 10px !important;
+    .card-info{
+        width: 80%;
+        height: auto;
+        .card-info-figure{
+            width: 50px;
+            height: 50px;
+        }
+        .card-info-title{
+            font-size: 1.2rem;
+        }
+        .card-info-text{
+            font-size: 1rem;
+        }
+    }
+}
+//Legales Component
+.section-legales{
+    margin: 20px 0;
+    gap: 10px !important;
+    .card-legales{
+        .card-legales-text{
+            font-size: 15px;
+        }
+    }
+}
+//Footer Component
+.footer-index{
+    padding: 10px 20px;
+    .footer-section{
+        .footer-section-ul{
+            gap: 10px;
+            padding: 0;
+            .title-footer{
+                width: 100%;
+            }
+            .box-pages{
+                width: 45% !important;
+                margin-top: 20px;
+                section{
+                    .figure-pay{
+                        width: 160px;
+                        height: 45px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+           
+            }
+        }
+    }
+    
+}
+
+//Header Page
+.header-pages{
+    h1{
+        text-align: center;
+        font-size: 5rem;
+    }
+}
+//Page About
+.article-parrafo{
+    padding: 80px 0 0 30px;
+    .line{
+        width: 70px;
+        height: 8px;
+    }
+    p{
+        font-size: 1.4rem;
+        margin: 0;
+    }
+}
+
+.article-figure{
+    padding: 20px 0;
+    figure{
+        width: 85%;
+        height: auto;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+.article-mision{
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 0 20px 60px 20px;
+    h2{
+        text-align: center;
+        font-size: 2.1rem;
+    }
+    p{
+        text-align: center;
+        font-size: 1.3rem;
+    }
+}
+.article-testamento{
+    gap: 30px;
+    text-align: center;
+    padding: 100px 30px;
+    .image{
+        width: 55px;
+        height: 55px;
+    }
+    .text{
+        font-size: 1.3rem;
+    }
+    .autor{
+        font-size: 1.3rem;
+        margin: 0;
+    }
+}
+.article-parrafo-two{
+    width: 100% !important;
+    gap: 20px;
+    padding: 60px 20px 0 20px;
+    text-align: center;
+    h2{
+        font-size: 2.1rem;
+    }
+    p{
+        font-size: 1.2rem;
+        margin: 0;
+    }
+}
+.article-figure-two{
+    width: 100% !important;
+    figure{
+        width: 100%;
+        height: 100%;
+        img{
+            object-fit: contain;
+        }
+    }
+}
+//Page Contact
+.section-option-contact{
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 50px 10px;
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+    h4{
+        font-size: 2rem;
+    }
+    a{
+        font-size: 1.2rem;
+    }
+
+}
+
+.section-form{
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+    form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div{
+            width: 100%;
+            align-items: center  !important;
+            input{
+                width: 80%;
+                height: 50px;
+                font-size: 1.2rem;
+            }
+            textarea{
+                width: 80%;
+                height: 210px;
+                font-size: 1.2rem;
+            }
+        }
+        .btn-submit{
+            font-size: 1.4rem;
+        }
+    }
+}
+}

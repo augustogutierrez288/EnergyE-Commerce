@@ -1,3 +1,6 @@
+//Variables
+@import "./variables";
+//Components
 @import "./body";
 @import "./navbar-component";
 @import "./header-component";
@@ -5,5 +8,10 @@
 @import "./footer-component";
 @import "./info-component";
 @import "./legales-components";
+//Pages
 @import "./page-about";
 @import "./page-contact";
+//Medias Queries
+@import "./media-tablet";
+@import "./media-long-mobile";
+@import "./media-short-mobile";

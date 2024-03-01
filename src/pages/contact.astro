@@ -56,16 +56,16 @@ import Layout from '../layouts/Layout.astro';
 			<section class="section-form col-12 col-ms-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
 				<form autocomplete="off" method="post">
 					<div>
-						<input type="text" name="name" placeholder="Tú Nombre Completo" id="name-user">
+						<input type="text" name="name" placeholder="Tú Nombre Completo" required id="name-user">
 					</div>
 					<div>
-						<input type="text" name="countri" placeholder="Tú Provincia" id="countri-user" >
+						<input type="text" name="countri" placeholder="Tú Provincia" required id="countri-user" >
 					</div>
 					<div>
-						<input type="email" name="email" placeholder="Tú Correo Electronico" id="email-user">
+						<input type="email" name="email" placeholder="Tú Correo Electronico" required id="email-user">
 					</div>
 					<div>
-						<textarea name="menssege" id="menssage-user" cols="40" rows="10"></textarea>
+						<textarea name="menssege" id="menssage-user" cols="40" required rows="10"></textarea>
 					</div>
 					<button class="btn-submit" type="submit">Enviar mensaje</button>
 				</form>

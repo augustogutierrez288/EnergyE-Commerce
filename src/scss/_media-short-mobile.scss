@@ -1,0 +1,271 @@
+@media screen and (min-width: 300px) and (max-width: 575px) {
+   //Navbar Component
+   .burger{
+        width: 100vw;
+        height: 70px;
+        .burger-section{
+            position: relative;
+            background-color: map-get($colors , light );
+            backdrop-filter: blur(0);
+            z-index: 1;
+            .burger-logo{
+                font-size: 1.8rem;
+                margin-left: 10px;
+            }
+            .burger-article{
+                width: 100vw;
+                height: 100vh;
+                position: absolute;
+                top: 40px;
+                right: 0;
+                transition: .5s;
+                .burger--ul{
+                    width: 100%;
+                    height: 100%;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    gap: 20px;
+                    list-style: none;
+                    margin-right: 0;
+                    padding: 0 20px 0 0;
+                    background-color: map-get($colors , light );
+                    gap: 20px;
+                    .burger--li{
+                        .burger--link{
+                            text-decoration: none;
+                            text-align: right;
+                            font-size: 2rem;
+                            font-weight: 700;
+                            color: map-get($colors , celestial-pure );
+                            opacity: .6;
+                            transition: all .5s;
+                        }
+                    }
+                }
+            }
+        
+        }
+    }
+    .hamburger{
+        display: inline-block;
+    }
+    //Header Component
+   .header-index{
+        height: auto;
+        .header-index-titles{
+            width: 100%;
+            height: 50%;
+            padding: 0 30px;
+            margin-top: 110px;
+            .title{
+                font-size: 5rem;
+                margin: 0 0 0 15px;
+            }
+            .subtitle{
+                top: 26%;
+                left: 50px;
+                font-size: 1.7rem;
+            }
+            .btn-call-to-action{
+                font-size: 1rem;
+            }
+        }
+        .header-index-image{
+            width: 100%;
+            height: 50%;
+            margin-top: 60px;
+            z-index: 0;
+            .image{
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+    }
+    //Brands Component
+    .article-brands{
+        padding: 0 5%;
+        gap: 5px;
+        .logo-brands{
+            width: 70px;
+            height: 70px;
+            margin: 0;
+        }
+    }
+    //Info Component
+    .section-info{
+        gap: 10px !important;
+        .card-info{
+            width: 80%;
+            height: auto;
+            .card-info-figure{
+                width: 40px;
+                height: 40px;
+            }
+            .card-info-title{
+                font-size: 1rem;
+            }
+            .card-info-text{
+                font-size: 14px;
+            }
+        }
+    }
+    //Legales Component
+    .section-legales{
+        margin: 20px 0;
+        gap: 10px !important;
+        .card-legales{
+            .card-legales-text{
+                font-size: 14px;
+            }
+        }
+    }
+    //Footer Component
+    .footer-index{
+        padding: 10px 20px;
+        .footer-section{
+            .footer-section-ul{
+                gap: 30px;
+                padding: 0;
+                .title-footer{
+                    width: 100%;
+                }
+                .box-pages{
+                    section{
+                        .figure-pay{
+                            width: 160px;
+                            height: 45px;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+               
+                }
+            }
+        }
+        
+    }
+
+    //Header Page
+    .header-pages{
+        h1{
+            text-align: center;
+        }
+    }
+    //Page About
+    .article-parrafo{
+        padding: 60px 0 0 30px;
+        .line{
+            width: 50px;
+            height: 5px;
+        }
+        p{
+            font-size: 1.1rem;
+            margin: 0;
+        }
+    }
+    
+    .article-figure{
+        padding: 10px 0;
+        figure{
+            width: 90%;
+            height: auto;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    
+    .article-mision{
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 0 20px 40px 20px;
+        h2{
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        p{
+            text-align: center;
+            font-size: 1.1rem;
+        }
+    }
+    .article-testamento{
+        gap: 30px;
+        text-align: center;
+        padding: 80px 30px;
+        .image{
+            width: 45px;
+            height: 45px;
+        }
+        .text{
+            font-size: 1.1rem;
+        }
+        .autor{
+            font-size: 1.1rem;
+            margin: 0;
+        }
+    }
+    .article-parrafo-two{
+        width: 100% !important;
+        gap: 20px;
+        padding: 40px 20px 0 20px;
+        text-align: center;
+        p{
+            font-size: 1.1rem;
+            margin: 0;
+        }
+    }
+    .article-figure-two{
+        width: 100% !important;
+        figure{
+            width: 100%;
+            height: 100%;
+            img{
+                object-fit: contain;
+            }
+        }
+    }
+    //Page Contact
+    .section-option-contact{
+        padding: 50px 20px;
+        h1{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 1.1rem;
+        }
+        h4{
+            font-size: 1.5rem;
+        }
+        a{
+            font-size: 1.1rem;
+        }
+    
+    }
+    
+    .section-form{
+        padding: 10px 20px;
+        margin-bottom: 50px;
+        form{
+            width: 100%;
+            div{
+                width: 100%;
+                display: flex;
+                input{
+                    width: 100%;
+                    height: 40px;
+                }
+                textarea{
+                    width: 100%;
+                    height: 210px;
+                }
+            }
+        }
+    }
+}

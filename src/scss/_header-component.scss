@@ -14,10 +14,10 @@
         align-items: flex-start;
         position: relative;
         gap: 30px;
+        color: map-get($colors , light );
         .title{
             font-size: 9rem;
             font-weight: 700;
-            color: #f8f9fa;
             opacity: .3;
         }
         .subtitle{
@@ -26,29 +26,29 @@
             left: 70px;
             font-size: 3rem;
             font-weight: 600;
-            color: #f8f9fa;
         }
         .text{
             font-size: 1.1rem;
             font-weight: 500;
-            color: #f8f9fa;
             margin: 0 0 0 15px;
         }
         .btn-call-to-action{
             text-decoration: none;
             font-size: 1.1rem;
             font-weight: 500;
-            color: #f8f9fa;
+            color: map-get($colors , light );
             background-color: transparent;
-            border: 2px solid #f8f9fa;
+            border: 2px solid map-get($colors , light );
             border-radius: 10px;
             padding: 10px 30px;
             margin: 0 0 0 15px;
-            .bi-arrow-right{
+            svg{
+                width: 40px;
+                height: 25px;
                 margin: 0 0 0 10px;
                 transition: all .5s;
             }
-            &:hover .bi-arrow-right{
+            &:hover svg{
                 transform: translateX(15px) !important;
             }
         }
@@ -60,9 +60,10 @@
         justify-content: center;
         align-items: center;
         .image{
-            width: 500px;
-            height: 550px;
+            width: 600px;
+            height: 600px;
             z-index: 3;
+            margin: 0;
             img{
                 width: 100%;
                 height: 100%;
@@ -87,7 +88,7 @@
         width: calc(100% + 1.3px);
         height: 150px;
         .shape-fill {
-            fill: #f8f9fa;
+            fill: map-get($colors , light );
         }
     }
 }
@@ -104,8 +105,7 @@
     h1{
         font-size: 4rem;
         font-weight: 700;
-        color: #f8f9fa;
-        opacity: 1;
+        color: map-get($colors , light );
     }
     .custom-shape-divider-bottom-1708964408 {
         position: absolute;
@@ -121,7 +121,7 @@
             width: calc(100% + 1.3px);
             height: 155px;
             .shape-fill {
-                fill: #f8f9fa;
+                fill: map-get($colors , light );
             }
         }
     }

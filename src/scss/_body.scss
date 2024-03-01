@@ -1,7 +1,6 @@
 body{
-    overflow-x: hidden;
-    background-color: #f8f9fa;
-    color: #121212;
+    overflow-x: hidden !important;
+    background-color: map-get($colors , light );
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -15,7 +14,7 @@ body{
     }
       
     &::-webkit-scrollbar-thumb {
-        background-color: #1ca9c9;
+        background-color: map-get($colors , celestial );
         border-radius: 10px;
     }
 }

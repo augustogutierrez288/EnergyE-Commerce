@@ -4,12 +4,11 @@
     padding: 20px 30px;
     .footer-section{
         .footer-section-ul{
-            gap: 60px;
+            gap: 80px;
             .title-footer{
                 font-size: 2rem;
                 font-weight: 600;
-                text-align: left;
-                color: #f8f9fa;
+                color: map-get($colors , light );
                 opacity: .6;
             }
         }

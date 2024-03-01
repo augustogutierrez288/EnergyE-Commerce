@@ -4,9 +4,10 @@ import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
 import { ViewTransitions } from 'astro:transitions';
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import "animate.css";
 import "../css/style.css";
 //components
-import Navbar from "../components/astro/Navbar.astro";
+import Navbar from "../components/react/Navbar";
 import Footer from "../components/astro/Footer.astro";
 //props
 const { title } = Astro.props;
@@ -29,12 +30,8 @@ const { title } = Astro.props;
 	</head>
 	<body>
 
-		<Navbar/>
+		<Navbar client:only/>
 		<slot />
 		<Footer/>
-
-		<script>
-			import "bootstrap/dist/js/bootstrap";
-		</script>
 	</body>
 </html>

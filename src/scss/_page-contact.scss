@@ -5,21 +5,19 @@
     align-items: flex-start;
     padding: 50px 0 50px 70px;
     gap: 10px;
+    color: map-get($colors , dark );
     h1{
         font-size: 3rem;
         font-weight: 700;
-        color: #121212;
     }
     p{
         font-size: 1.2rem;
         font-weight: 300;
-        color: #121212;
         margin: 0;
     }
     h4{
         font-size: 2rem;
         font-weight: 500;
-        color: #121212;
         margin-bottom: 10px;
     }
     a{
@@ -48,22 +46,36 @@
                 height: 40px;
                 font-size: 1.1rem;
                 font-weight: 300;
-                color: #121212;
-                background-color: #e9ecef;
-                border: 1.5px solid #e9ecef;
-                border-radius: 15px;
-                padding: 10px 20px;
+                color: map-get($colors , dark );
+                background-color: map-get($colors , cemento );
+                border: 1.5px solid map-get($colors , cemento );
+                border-radius: 10px;
+                padding: 15px 25px;
+                &:valid {
+                    background-color: map-get($colors , cemento );
+                    border-color: map-get($colors , purple-light );
+                }
+                &::selection {
+                    background-color: map-get($colors , purple-light );
+                }
             }
             textarea{
                 width: 420px;
                 height: 210px;
                 font-size: 1.1rem;
                 font-weight: 300;
-                color: #121212;
-                background-color: #e9ecef;
-                border: 1.5px solid #e9ecef;
-                border-radius: 20px;
-                padding: 10px 20px;
+                color: map-get($colors , dark );
+                background-color: map-get($colors , cemento );
+                border: 1.5px solid map-get($colors , cemento );
+                border-radius: 15px;
+                padding: 15px 25px;
+                &:valid {
+                    background-color: map-get($colors , cemento );
+                    border-color: map-get($colors , purple-light );
+                }
+                &::selection {
+                    background-color: map-get($colors , purple-light );
+                }
             }
         }
         .btn-submit{
