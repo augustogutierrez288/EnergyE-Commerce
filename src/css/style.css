@@ -57,8 +57,27 @@ body {
           .burger .burger-section .burger-article .burger--ul .burger--li .burger--link:hover {
             color: #000000;
             opacity: 1; }
-        .burger .burger-section .burger-article .burger--ul .burger--li .active-link {
-          color: #3f9efd !important; }
+    .burger .burger-section .article-desktop {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .burger .burger-section .article-desktop .burger--ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        list-style: none;
+        margin-right: 100px; }
+        .burger .burger-section .article-desktop .burger--ul .burger--li .burger--link {
+          text-decoration: none;
+          font-size: 1rem;
+          font-weight: 500;
+          color: #121212;
+          opacity: .8;
+          transition: all .5s; }
+          .burger .burger-section .article-desktop .burger--ul .burger--li .burger--link:hover {
+            color: #000000;
+            opacity: 1; }
 
 /*!
  * Hamburgers
@@ -520,6 +539,8 @@ body {
       .burger .burger-section .burger-logo {
         font-size: 2.5rem;
         margin-left: 10px; }
+      .burger .burger-section .article-desktop {
+        display: none !important; }
       .burger .burger-section .burger-article {
         width: 100vw;
         height: 100vh;
@@ -546,10 +567,6 @@ body {
             color: #3f9efd;
             opacity: .6;
             transition: all .5s; }
-      .burger .burger-section .active-article {
-        display: flex !important; }
-      .burger .burger-section .remove-article {
-        display: none !important; }
   .hamburger {
     display: inline-block;
     top: 30px; }
@@ -732,6 +749,8 @@ body {
       .burger .burger-section .burger-logo {
         font-size: 1.8rem;
         margin-left: 10px; }
+      .burger .burger-section .article-desktop {
+        display: none !important; }
       .burger .burger-section .burger-article {
         width: 100vw;
         height: 100vh;

@@ -30,7 +30,30 @@ function Navbar() {
         <a className="burger-logo" href="/">
           Energy
         </a>
-
+        <article className={`burger-article article-desktop`} ref={articleRef}>
+          <ul className="burger--ul">
+            <li className="burger--li">
+              <a className="burger--link" href="/">
+                Inicio
+              </a>
+            </li>
+            <li className="burger--li">
+              <a className="burger--link" href="#product">
+                Productos
+              </a>
+            </li>
+            <li className="burger--li">
+              <a className="burger--link" href="about">
+                Sobre Nosotros
+              </a>
+            </li>
+            <li className="burger--li">
+              <a className="burger--link" href="contact">
+                Contactos
+              </a>
+            </li>
+          </ul>
+            </article> 
         {
             isActive ? 
             <article className={`burger-article animate__animated ${isActive ? 'animate__fadeIn' : 'animate__fadeOut'}`} ref={articleRef}>
@@ -56,7 +79,7 @@ function Navbar() {
               </a>
             </li>
           </ul>
-        </article> 
+            </article> 
         :
         null
         }

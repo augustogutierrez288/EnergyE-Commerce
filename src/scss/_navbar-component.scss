@@ -45,8 +45,32 @@
               opacity: 1;
             }
           }
-          .active-link{
-            color: map-get($colors , celestial-pure ) !important;
+        }
+      }
+    }
+    .article-desktop{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .burger--ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        list-style: none;
+        margin-right: 100px;
+        .burger--li{
+          .burger--link{
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            color: map-get($colors , dark );
+            opacity: .8;
+            transition: all .5s;
+            &:hover{
+              color: #000000;
+              opacity: 1;
+            }
           }
         }
       }
