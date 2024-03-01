@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 import react from "@astrojs/react";
-import netlify from '@astrojs/netlify/edge-functions';
+import netlify from '@astrojs/netlify/functions';
 
 // https://astro.build/config
 export default defineConfig({
@@ -8,6 +8,7 @@ export default defineConfig({
   output: "server",
   integrations: [react()],
   adapter: netlify({
+    edgeMiddleware: true,
     cacheOnDemandPages: true,
   }),
 });
