@@ -14,6 +14,75 @@ body {
     background-color: #8EC5FC;
     border-radius: 10px; }
 
+.container-animation {
+  display: block; }
+
+@-webkit-keyframes waterfall {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-250%);
+    transform: translateY(-250%); }
+  40%,
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(250%);
+    transform: translateY(250%); } }
+
+@keyframes waterfall {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-250%);
+    transform: translateY(-250%); }
+  40%,
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(250%);
+    transform: translateY(250%); } }
+
+.waterfall div {
+  -webkit-animation: waterfall 1.5s infinite;
+  animation: waterfall 1.5s infinite;
+  height: 20px;
+  left: 50%;
+  margin-top: -10px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  width: 20px; }
+
+.waterfall div:nth-of-type(1) {
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+  margin-left: -10px; }
+
+.waterfall div:nth-of-type(2) {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  margin-left: 15px; }
+
+.waterfall div:nth-of-type(3) {
+  -webkit-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+  margin-left: -35px; }
+
+.waterfall div:nth-of-type(4) {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  margin-left: 40px; }
+
+.waterfall div:nth-of-type(5) {
+  -webkit-animation-delay: 1.25s;
+  animation-delay: 1.25s;
+  margin-left: -60px; }
+
 .burger {
   width: 100vw;
   height: 70px; }
@@ -24,8 +93,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #f8f9fa8a;
-    backdrop-filter: blur(10px);
+    background-color: #f8f9fa;
     z-index: 1000; }
     .burger .burger-section .burger-logo {
       display: block;
@@ -192,7 +260,7 @@ body {
     .header-index .header-index-titles .title {
       font-size: 9rem;
       font-weight: 700;
-      opacity: .3; }
+      opacity: .5; }
     .header-index .header-index-titles .subtitle {
       position: absolute;
       top: 43%;
@@ -303,6 +371,51 @@ body {
       height: 100%;
       object-fit: contain;
       filter: grayscale(100%); }
+
+.card-product {
+  width: 300px;
+  height: 450px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid #f8f9fa;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+  .card-product .card-figure {
+    width: 100%;
+    height: 40%; }
+    .card-product .card-figure img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
+  .card-product .card-main {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    color: #121212; }
+    .card-product .card-main .card-title {
+      font-size: 1.2rem !important;
+      font-weight: 600 !important; }
+    .card-product .card-main .card-text {
+      font-size: 1rem !important;
+      font-weight: 300 !important; }
+    .card-product .card-main .card-button {
+      text-align: left;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 400;
+      padding: 10px 30px;
+      border: 1px solid #8EC5FC;
+      border-radius: 10px;
+      background-color: transparent;
+      color: #8EC5FC; }
+      .card-product .card-main .card-button:hover {
+        transition: all .5s;
+        color: #f8f9fa;
+        background-color: #8EC5FC; }
 
 .footer-index {
   background-color: #8EC5FC;
@@ -527,6 +640,240 @@ body {
     border: 1px solid #acacff;
     border-radius: 15px; }
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .burger {
+    width: 100vw;
+    height: 80px; }
+    .burger .burger-section {
+      position: relative;
+      background-color: #f8f9fa;
+      backdrop-filter: blur(0);
+      z-index: 1; }
+      .burger .burger-section .burger-logo {
+        font-size: 3rem;
+        margin-left: 45px; }
+      .burger .burger-section .article-desktop {
+        display: none !important; }
+      .burger .burger-section .burger-article {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        transition: .5s; }
+        .burger .burger-section .burger-article .burger--ul {
+          width: 100%;
+          height: 100%;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 20px;
+          list-style: none;
+          margin-right: 0;
+          padding: 0 20px 0 0;
+          background-color: #f8f9fa;
+          gap: 20px; }
+          .burger .burger-section .burger-article .burger--ul .burger--li .burger--link {
+            text-decoration: none;
+            text-align: right;
+            font-size: 4.5rem;
+            font-weight: 700;
+            color: #3f9efd;
+            opacity: .6;
+            transition: all .5s; }
+  .hamburger {
+    display: inline-block;
+    top: 30px;
+    width: 60px;
+    height: calc(60px - 16px); }
+    .hamburger .hamburger-box {
+      width: 100%;
+      height: 100%; }
+  .header-index {
+    height: auto; }
+    .header-index .header-index-titles {
+      width: 100%;
+      height: 50%;
+      padding: 0 30px;
+      margin-top: 110px; }
+      .header-index .header-index-titles .title {
+        font-size: 8rem;
+        margin: 0 0 0 15px; }
+      .header-index .header-index-titles .subtitle {
+        top: 37%;
+        left: 50px;
+        font-size: 2.7rem; }
+      .header-index .header-index-titles .text {
+        font-size: 1.5rem;
+        margin-top: 20px; }
+      .header-index .header-index-titles .btn-call-to-action {
+        font-size: 1.5rem; }
+    .header-index .header-index-image {
+      width: 100%;
+      height: 50%;
+      margin-top: 60px;
+      z-index: 0; }
+      .header-index .header-index-image .image {
+        width: 100%;
+        height: 100%; }
+  .title-brands {
+    font-size: 1.2rem; }
+  .article-brands {
+    padding: 0 25%;
+    gap: 5px; }
+    .article-brands .logo-brands {
+      width: 80px;
+      height: 80px;
+      margin: 0; }
+  .section-info {
+    gap: 10px !important; }
+    .section-info .card-info {
+      width: 60%;
+      height: auto; }
+      .section-info .card-info .card-info-figure {
+        width: 60px;
+        height: 60px; }
+      .section-info .card-info .card-info-title {
+        font-size: 1.5rem; }
+      .section-info .card-info .card-info-text {
+        font-size: 1.2rem; }
+  .section-legales {
+    margin: 20px 0;
+    gap: 10px !important; }
+    .section-legales .card-legales .card-legales-text {
+      font-size: 1rem; }
+  .footer-index {
+    padding: 10px 20px; }
+    .footer-index .footer-section .footer-section-ul {
+      gap: 10px;
+      padding: 0; }
+      .footer-index .footer-section .footer-section-ul .title-footer {
+        width: 100%;
+        font-size: 3rem; }
+      .footer-index .footer-section .footer-section-ul .box-pages {
+        width: 45% !important;
+        margin-top: 20px;
+        color: #f8f9fa; }
+        .footer-index .footer-section .footer-section-ul .box-pages h3 {
+          font-size: 2rem;
+          font-weight: 500; }
+        .footer-index .footer-section .footer-section-ul .box-pages a {
+          text-decoration: none;
+          font-size: 1.5rem;
+          font-weight: 400; }
+        .footer-index .footer-section .footer-section-ul .box-pages section h4 {
+          font-size: 2rem;
+          font-weight: 500; }
+        .footer-index .footer-section .footer-section-ul .box-pages section article .figure-redes {
+          margin: 15px 0 25px 0;
+          width: 30px;
+          height: 30px; }
+          .footer-index .footer-section .footer-section-ul .box-pages section article .figure-redes svg {
+            width: 100%;
+            height: 100%; }
+        .footer-index .footer-section .footer-section-ul .box-pages section .figure-pay {
+          width: 200px;
+          height: 60px; }
+          .footer-index .footer-section .footer-section-ul .box-pages section .figure-pay img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; }
+  .header-pages h1 {
+    text-align: center;
+    font-size: 5rem; }
+  .article-parrafo {
+    padding: 80px 0 0 30px; }
+    .article-parrafo .line {
+      width: 80px;
+      height: 10px; }
+    .article-parrafo p {
+      font-size: 1.8rem;
+      margin: 0; }
+  .article-figure {
+    padding: 20px 0; }
+    .article-figure figure {
+      width: 85%;
+      height: auto; }
+      .article-figure figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; }
+  .article-mision {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 0 60px 60px 60px; }
+    .article-mision h2 {
+      text-align: center;
+      font-size: 2.5rem; }
+    .article-mision p {
+      text-align: center;
+      font-size: 1.5rem; }
+  .article-testamento {
+    gap: 30px;
+    text-align: center;
+    padding: 100px 60px; }
+    .article-testamento .image {
+      width: 60px;
+      height: 60px; }
+    .article-testamento .text {
+      font-size: 1.5rem; }
+    .article-testamento .autor {
+      font-size: 1.5rem;
+      margin: 0; }
+  .article-parrafo-two {
+    width: 100% !important;
+    gap: 20px;
+    padding: 60px 60px 0 60px;
+    text-align: center; }
+    .article-parrafo-two h2 {
+      font-size: 2.5rem; }
+    .article-parrafo-two p {
+      font-size: 1.5rem;
+      margin: 0; }
+  .article-figure-two {
+    width: 100% !important; }
+    .article-figure-two figure {
+      width: 100%;
+      height: 100%; }
+      .article-figure-two figure img {
+        object-fit: contain; }
+  .section-option-contact {
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 50px 10px; }
+    .section-option-contact h1 {
+      font-size: 3rem; }
+    .section-option-contact p {
+      font-size: 1.3rem; }
+    .section-option-contact h4 {
+      font-size: 2rem; }
+    .section-option-contact a {
+      font-size: 1.2rem; }
+  .section-form {
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 10px 20px;
+    margin-bottom: 50px; }
+    .section-form form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .section-form form div {
+        width: 100%;
+        align-items: center  !important; }
+        .section-form form div input {
+          width: 80%;
+          height: 50px;
+          font-size: 1.2rem; }
+        .section-form form div textarea {
+          width: 80%;
+          height: 210px;
+          font-size: 1.2rem; }
+      .section-form form .btn-submit {
+        font-size: 1.4rem; } }
+
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .burger {
     width: 100vw;
@@ -538,7 +885,7 @@ body {
       z-index: 1; }
       .burger .burger-section .burger-logo {
         font-size: 2.5rem;
-        margin-left: 10px; }
+        margin-left: 45px; }
       .burger .burger-section .article-desktop {
         display: none !important; }
       .burger .burger-section .burger-article {
@@ -629,13 +976,32 @@ body {
       gap: 10px;
       padding: 0; }
       .footer-index .footer-section .footer-section-ul .title-footer {
-        width: 100%; }
+        width: 100%;
+        font-size: 2.5rem; }
       .footer-index .footer-section .footer-section-ul .box-pages {
         width: 45% !important;
-        margin-top: 20px; }
+        margin-top: 20px;
+        color: #f8f9fa; }
+        .footer-index .footer-section .footer-section-ul .box-pages h3 {
+          font-size: 1.8rem;
+          font-weight: 500; }
+        .footer-index .footer-section .footer-section-ul .box-pages a {
+          text-decoration: none;
+          font-size: 1.3rem;
+          font-weight: 400; }
+        .footer-index .footer-section .footer-section-ul .box-pages section h4 {
+          font-size: 1.8rem;
+          font-weight: 500; }
+        .footer-index .footer-section .footer-section-ul .box-pages section article .figure-redes {
+          margin: 15px 0 25px 0;
+          width: 25px;
+          height: 25px; }
+          .footer-index .footer-section .footer-section-ul .box-pages section article .figure-redes svg {
+            width: 100%;
+            height: 100%; }
         .footer-index .footer-section .footer-section-ul .box-pages section .figure-pay {
-          width: 160px;
-          height: 45px; }
+          width: 200px;
+          height: 60px; }
           .footer-index .footer-section .footer-section-ul .box-pages section .figure-pay img {
             width: 100%;
             height: 100%;
@@ -748,7 +1114,7 @@ body {
       z-index: 1; }
       .burger .burger-section .burger-logo {
         font-size: 1.8rem;
-        margin-left: 10px; }
+        margin-left: 45px; }
       .burger .burger-section .article-desktop {
         display: none !important; }
       .burger .burger-section .burger-article {
@@ -772,7 +1138,7 @@ body {
           .burger .burger-section .burger-article .burger--ul .burger--li .burger--link {
             text-decoration: none;
             text-align: right;
-            font-size: 2rem;
+            font-size: 3.2rem;
             font-weight: 700;
             color: #3f9efd;
             opacity: .6;
@@ -834,13 +1200,25 @@ body {
       padding: 0; }
       .footer-index .footer-section .footer-section-ul .title-footer {
         width: 100%; }
-      .footer-index .footer-section .footer-section-ul .box-pages section .figure-pay {
-        width: 160px;
-        height: 45px; }
-        .footer-index .footer-section .footer-section-ul .box-pages section .figure-pay img {
-          width: 100%;
-          height: 100%;
-          object-fit: contain; }
+      .footer-index .footer-section .footer-section-ul .box-pages {
+        color: #f8f9fa; }
+        .footer-index .footer-section .footer-section-ul .box-pages h3 {
+          font-size: 1.5rem;
+          font-weight: 500; }
+        .footer-index .footer-section .footer-section-ul .box-pages a {
+          text-decoration: none;
+          font-size: 1rem;
+          font-weight: 400; }
+        .footer-index .footer-section .footer-section-ul .box-pages section h4 {
+          font-size: 1.5rem;
+          font-weight: 500; }
+        .footer-index .footer-section .footer-section-ul .box-pages section .figure-pay {
+          width: 160px;
+          height: 45px; }
+          .footer-index .footer-section .footer-section-ul .box-pages section .figure-pay img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; }
   .header-pages h1 {
     text-align: center; }
   .article-parrafo {

@@ -10,7 +10,7 @@
         z-index: 1;
         .burger-logo{
             font-size: 2.5rem;
-            margin-left: 10px;
+            margin-left: 45px;
         }
         .article-desktop{
             display: none !important;
@@ -139,14 +139,40 @@
             padding: 0;
             .title-footer{
                 width: 100%;
+                font-size: 2.5rem;
             }
             .box-pages{
                 width: 45% !important;
                 margin-top: 20px;
+                color: map-get($colors , light );
+                    h3{
+                        font-size: 1.8rem;
+                        font-weight: 500;
+                    }
+                    a{
+                        text-decoration: none;
+                        font-size: 1.3rem;
+                        font-weight: 400;
+                    }
                 section{
+                    h4{
+                        font-size: 1.8rem;
+                        font-weight: 500;
+                    }
+                    article{
+                        .figure-redes{
+                            margin: 15px 0 25px 0;
+                            width: 25px;
+                            height: 25px;
+                            svg{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }   
                     .figure-pay{
-                        width: 160px;
-                        height: 45px;
+                        width: 200px;
+                        height: 60px;
                         img{
                             width: 100%;
                             height: 100%;

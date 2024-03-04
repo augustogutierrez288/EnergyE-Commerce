@@ -1,0 +1,53 @@
+.card-product{
+    width: 300px;
+    height: 450px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid map-get($colors , light );
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    .card-figure{
+        width: 100%;
+        height: 40%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .card-main{
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        color: map-get($colors, dark );
+        .card-title{
+            font-size: 1.2rem !important;
+            font-weight: 600 !important;
+        }
+        .card-text{
+            font-size: 1rem !important;
+            font-weight: 300 !important;
+        }
+        .card-button{
+            text-align: left;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 400;
+            padding: 10px 30px;
+            border: 1px solid map-get($colors , celestial );
+            border-radius: 10px;
+            background-color: transparent;
+            color: map-get($colors , celestial );
+            &:hover{
+                transition: all .5s;
+                color: map-get($colors , light );
+                background-color: map-get($colors , celestial );
+            }
+        }
+
+    }
+}

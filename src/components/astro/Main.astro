@@ -1,5 +1,6 @@
 ---
 import Brands from "./Brands.astro";
+import ContainerCardProduct from "../react/ContainerCardProducts";
 import Info from "./Info.astro";
 import Legales from "./Legales.astro";
 ---
@@ -8,6 +9,7 @@ import Legales from "./Legales.astro";
     <section class="row">
         <h3 class="col-12 text-center title-brands">Marcas que comercializamos</h3>
         <Brands/>
+        <ContainerCardProduct client:only/>
         <Info/>
         <Legales/>
     </section>
